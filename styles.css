@@ -1,0 +1,218 @@
+/* Estilos para Comparador de Súper - Diseño limpio y moderno, pensado para móvil */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 40px;
+}
+
+/* Aviso de precios de ejemplo */
+.aviso-ejemplo {
+  background-color: #fff3cd;
+  color: #856404;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-bottom: 2px solid #ffc107;
+}
+
+/* Encabezado */
+.encabezado {
+  background: linear-gradient(135deg, #2e7d32 0%, #43a047 100%);
+  color: white;
+  padding: 24px 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.encabezado h1 {
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.subtitulo {
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+/* Sección buscador */
+.buscador-seccion {
+  background: white;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.buscador-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2e7d32;
+  font-size: 0.95rem;
+}
+
+.buscador-input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.buscador-input:focus {
+  outline: none;
+  border-color: #43a047;
+}
+
+.buscador-input::placeholder {
+  color: #999;
+}
+
+/* Sección resultados */
+.resultados-seccion {
+  margin: 16px;
+}
+
+.titulo-resultados {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* Lista de productos */
+.lista-productos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Tarjeta de producto */
+.producto-card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #43a047;
+}
+
+.producto-nombre {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+/* Lista de precios por supermercado */
+.precios-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.precio-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+}
+
+/* Precio más barato */
+.precio-item.mas-barato {
+  background-color: #e8f5e9;
+  border: 2px solid #4caf50;
+  font-weight: 600;
+}
+
+.supermercado-nombre {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.precio-valor {
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.precio-item.mas-barato .precio-valor {
+  color: #2e7d32;
+  font-size: 1.15rem;
+}
+
+.no-disponible {
+  color: #999;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Diferencia de precio */
+.diferencia-precio {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Fecha de actualización */
+.fecha-actualizacion {
+  font-size: 0.8rem;
+  color: #666;
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Sin resultados */
+.sin-resultados {
+  text-align: center;
+  color: #666;
+  padding: 32px 16px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive para pantallas más grandes */
+@media (min-width: 600px) {
+  .encabezado h1 {
+    font-size: 2.2rem;
+  }
+  
+  .subtitulo {
+    font-size: 1rem;
+  }
+  
+  .buscador-seccion,
+  .resultados-seccion {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .producto-card {
+    padding: 18px;
+  }
+}
